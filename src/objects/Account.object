@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <fullName>Industry</fullName>
         <picklist>
@@ -131,7 +132,15 @@
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
-        </picklist>
+        <picklistValues>
+                <fullName>Test1</fullName>
+                <default>false</default>
+            </picklistValues>
+      <picklistValues>
+                <fullName>Test2</fullName>
+                <default>false</default>
+            </picklistValues>
+    </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
     </fields>
