@@ -132,6 +132,14 @@
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
+    <picklistValues>
+                <fullName>test1</fullName>
+                <default>false</default>
+            </picklistValues>
+      <picklistValues>
+                <fullName>test2</fullName>
+                <default>false</default>
+            </picklistValues>
     </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
