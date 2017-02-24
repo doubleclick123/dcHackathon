@@ -132,15 +132,15 @@
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
-<picklistValues>
+        <picklistValues>
                 <fullName>Test1</fullName>
                 <default>false</default>
             </picklistValues>
-               <picklistValues>
+      <picklistValues>
                 <fullName>Test2</fullName>
                 <default>false</default>
             </picklistValues>
-          </picklist>
+    </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
     </fields>
