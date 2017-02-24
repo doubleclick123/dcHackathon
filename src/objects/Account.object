@@ -132,7 +132,7 @@
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
-          </picklist>
+        </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
     </fields>
