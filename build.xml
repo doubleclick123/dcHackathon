@@ -1,0 +1,37 @@
+<project name="ANT Salesforce Migration Tool" default="retrieve" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <property name="sf.properties" value="build"/>
+    <property file="${sf.properties}.properties"/>
+    <property name="sf.retrieveTarget" value="src"/>
+    <property name="sf.unpackaged" value="package.xml"/>
+    <property environment="env"/>
+
+    <taskdef resource="com/salesforce/antlib.xml" uri="antlib:com.salesforce">
+        <classpath>
+            <pathelement location="salesforce_ant_36.0/ant-salesforce.jar" />
+        </classpath>
+    </taskdef>
+
+    <target name="retrieve">
+      <echo message="retrieve: ${sf.username}"/>
+      <echo message="retrieveTarget: ${sf.retrieveTarget}"/>
+      <echo message="retrieveTarget: ${sf.unpackaged}"/>
+
+      <sf:retrieve username="${sf.username}" 
+                   password="${sf.password}"
+                   serverurl="${sf.serverurl}" 
+                   retrieveTarget="${sf.retrieveTarget}"
+                   unpackaged="${sf.unpackaged}"/>
+    </target>
+
+    <target name="deploy">
+      <echo message="${sf.username}" />
+      <sf:deploy username="${sf.username}" 
+                 password="${sf.password}" serverurl="${sf.serverurl}" 
+                 deployroot="src" 
+                 singlePackage="true" 
+                 maxPoll="5000" 
+                 ignoreWarnings="true"/>
+    </target>
+
+</project>
