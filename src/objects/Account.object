@@ -140,6 +140,10 @@
                 <fullName>test2</fullName>
                 <default>false</default>
             </picklistValues>
+    <picklistValues>
+                <fullName>test4</fullName>
+                <default>false</default>
+            </picklistValues>
     </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
